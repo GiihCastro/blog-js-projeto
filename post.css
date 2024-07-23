@@ -1,0 +1,113 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header-title {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+.change-color-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #90EE90;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.change-color-button:hover {
+    background-color: #008000;
+}
+.container {
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.typing-effect {
+    font-size: 36px;
+    font-weight: bold;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(22) 1s 1 normal both, blinkTextCursor 500ms steps(22) infinite normal;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 22ch; }
+}
+@keyframes blinkTextCursor {
+    from { border-right-color: black; }
+    to { border-right-color: transparent; }
+}
+.button {
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+.new-post-form {
+    display: none;
+    margin-top: 20px;
+}
+.new-post-form.active {
+    display: block;
+}
+.new-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+.like-button.active {
+    background-color: #28a745;
+}
+.posts-section {
+    margin-top: 20px;
+    width: 100%;
+}
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.post .content {
+    margin-bottom: 10px;
+}
+.post .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

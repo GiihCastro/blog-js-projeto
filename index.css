@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+.container {
+    text-align: center;
+    position: relative;
+}
+.typing-effect {
+    font-size: 36px;
+    font-weight: bold;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(12) 1s 1 normal both, blinkTextCursor 500ms steps(12) infinite normal;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 12ch; }
+}
+@keyframes blinkTextCursor {
+    from { border-right-color: black; }
+    to { border-right-color: transparent; }
+}
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #FFA500;
+}
+.change-color-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #90EE90;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.change-color-button:hover {
+    background-color: #008000;
+}

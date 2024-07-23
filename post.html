@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Blog.com</title>
+    <link rel="stylesheet" href="post.css">
+    
+</head>
+<body>
+    <div class="header">
+        <a href="publicacoes.html" class="header-title">Blog.com</a>
+        <button class="change-color-button" onclick="changeBackgroundColor()">Trocar Cor</button>
+    </div>
+
+    <div class="container">
+        <h1 class="typing-effect">O que tá pegando?</h1>
+
+        <button class="button" onclick="toggleNewPostForm()">Novo Post</button>
+
+      
+        <form id="newPostForm" class="new-post-form" onsubmit="submitNewPost(event)">
+            <label for="postTitle">Título:</label><br>
+            <input type="text" id="postTitle" name="postTitle" required><br><br>
+            <label for="postContent">Conteúdo:</label><br>
+            <textarea id="postContent" name="postContent" rows="4" required></textarea><br><br>
+            <button type="submit" class="button">Publicar</button>
+        </form>
+    </div>
+
+  
+    <div class="posts-section"></div>
+    <script src="post.js"></script>
+</body>
+</html>
